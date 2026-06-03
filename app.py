@@ -31,9 +31,9 @@ try:
     pipeline = load_ml_pipeline()
 except Exception as e:
     st.error("⚠️ Error: Unable to locate or serialize 'car_price_best_model (1).pkl'. Make sure it is saved in the same directory.")
-    st.stop()
-
-# 3. User Input Layout
+# st.write(f"The minimum value is {np.min(selling_price)}")
+# st.write(f"The maximum value is {np.max(selling_price)}")
+# st.write(f"The average value is {np.mean(selling_price)}")
 st.subheader("Vehicle Configuration Specifications")
 
 col1, col2 = st.columns(2)
